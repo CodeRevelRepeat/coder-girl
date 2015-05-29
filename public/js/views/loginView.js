@@ -7,10 +7,7 @@ var LoginView = React.createClass({
   render: function() {
     return (
       <div>
-        <div id="videos">
-          <div className="video"><video controls loop autoPlay src="/gwc.mp4"></video></div>
-        </div>
-        <div className="login-center">
+        <div>
           <Login />
         </div>
       </div>
