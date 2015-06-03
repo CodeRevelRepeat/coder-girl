@@ -14,7 +14,7 @@ describe('Header', function() {
   it('exists on the DOM', function() {
     var React = require('react/addons');
     var TestUtils = React.addons.TestUtils;
-    var stubRouterContext = require('./utils/stubRouterContext');
+    var stubRouterContext = require('./utils/ReactRouterContext');
     var Header = require('../Header.js');
     // var Subject = stubRouterContext(Header);
     var component; 
