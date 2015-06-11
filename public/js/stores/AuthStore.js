@@ -22,6 +22,9 @@ var setCurrentUser = function(data){
   _authStore.currentUser.isAuth = true;
   var userToken = JSON.stringify(data.token);
   window.localStorage.setItem('io.codergirl', userToken);
+  //If want to remove search query from url (but will cause refresh)
+  // var url = window.location.origin + '#/home';
+  // window.location =  url;
 };
 
 var clearCurrentUser = function() {
@@ -33,6 +36,9 @@ var clearCurrentUser = function() {
 var invalidateUser = function(){
   _authStore.currentUser.isAuth = false;
 };
+
+
+
 
 var AuthStore = objectAssign({}, EventEmitter.prototype, {
   addChangeListener: function(cb) {
