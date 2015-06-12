@@ -7,6 +7,8 @@
 
 'use strict';
 
+// var Login = require('../components/Login');
+
 var AppDispatcher = require('../dispatcher/AppDispatcher');
 var EventEmitter = require('events').EventEmitter;
 var AppConstants = require('../constants/AppConstants');
@@ -22,6 +24,7 @@ var setCurrentUser = function(data){
   _authStore.currentUser.isAuth = true;
   var userToken = JSON.stringify(data.token);
   window.localStorage.setItem('io.codergirl', userToken);
+  // Login.transitionTo('/home');
 };
 
 var clearCurrentUser = function() {
