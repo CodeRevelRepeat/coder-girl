@@ -29,7 +29,7 @@ var Chat = React.createClass({
         <div className="chat-menu-bar">
           <a className="close-button" ref="minimize" onClick={this.toggleChat}>-</a>
         </div>
-        <div className="chat-window" ref="chat">
+        <div className="vertical grid-block chat-window" ref="chat">
           <MessageSection />
           <MessageSubmit />
         </div>

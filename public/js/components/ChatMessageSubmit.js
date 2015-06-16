@@ -21,7 +21,7 @@ var MessageSubmit = React.createClass({
 
   render: function() {
     return (
-      <textarea className="message-submit-textarea" name="message" value={this.state.text} 
+      <textarea className="grid-block message-submit-textarea" name="message" value={this.state.text} 
         onChange={this._onChange} onKeyDown={this._onKeyDown} />
     )
   },

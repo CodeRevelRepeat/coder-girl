@@ -52,7 +52,7 @@ var MessageSection = React.createClass({
       messageItems.push(createMessageItemForMessage(message));
     };
     return (
-      <div className='message-section'>
+      <div className='grid-block message-section'>
         <ul className="message-list" ref="messageList">
           {messageItems}
         </ul>
